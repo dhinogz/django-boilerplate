@@ -3,9 +3,13 @@
 Simple Django boilerplate from William Vincent's Django for Professionals. 
 
 Includes:
-- Docker
-- Allauth
-- Bootstrap 4
+- Docker 
+- Built in user management with allauth (also includes custom allauth templates)
+- Base template with simple navbar and home/about templates
+- Custom User Model set up
+- Finished tests for accounts and pages app
+- Page app includes Home and About views
+- Responsive CSS styling with Bootstrap 4
 - Crispy Forms
 
 ## Installation
@@ -43,7 +47,7 @@ DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
 ```
 
 ### Docker
-Make sure you have Docker installed to create project container.
+Make sure you have Docker and docker-compose installed to build project container.
 
 Then, run this command to install dependencies in container and run in Docker detach mode. 
 ```bash
