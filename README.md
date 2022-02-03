@@ -21,7 +21,7 @@ First, clone repo
 $ git clone https://github.com/dhinogz/django-boilerplate.git
 ```
 
-Change name and enter directory
+Change name and change directory
 ```bash
 $ mv django-boilerplate project_name && cd project_name
 ```
