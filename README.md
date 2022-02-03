@@ -71,6 +71,7 @@ For example, let's suppose we want to start an app in our Docker instance. We wo
 $ docker-compose exec web python manage.py startapp app_name
 ```
 
+### Static files in production
 Before deploying, we need to run collectstatic to create a single, production-ready directory of all the static files in our project.
 ```bash
 $ docker-compose exec web python manage.py collectstatic
