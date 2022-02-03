@@ -1,1 +1,1 @@
-console.log("Javascript is loaded, baby!")
+// JS code here
