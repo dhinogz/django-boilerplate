@@ -1,9 +1,10 @@
 # Django Boilerplate
 
-Simple Django boilerplate from William Vincent's Django for Professionals. 
+Simple Django boilerplate from William Vincent's [Django for Professionals](https://djangoforprofessionals.com/). 
 
 Includes:
 - Docker 
+- PostgreSQL 14
 - Built in user management with allauth
 - Custom User Model set up
 - Finished tests for accounts and pages app
@@ -50,11 +51,14 @@ DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
 
 ### Docker
 Make sure you have Docker and docker-compose installed to build project container.
+Also make sure you have pipenv installed globally to make our virtual environment in the container.
 
-Then, run this command to install dependencies in container and run in Docker detach mode. 
+Then, type this into the command line to build and run container in detached mode. 
 ```bash
 $ docker-compose up -d --build
 ```
+Visit page on http://127.0.0.1:8000/
+
 After first install, make migrations
 ```bash
 $ docker-compose exec web python manage.py migrate
