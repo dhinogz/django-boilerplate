@@ -82,6 +82,11 @@ For example, let's suppose we want to start an app in our Docker instance. We wo
 $ docker-compose exec web python manage.py startapp app_name
 ```
 
+### Create super user
+```bash
+$ docker-compose exec web python manage.py creatsuperuser
+```
+
 ### Seeing logs
 To display log output from our container, run following code:
 ```bash
