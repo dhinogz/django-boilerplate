@@ -26,7 +26,7 @@ We're gonna want to create a .env.dev file to store our environment variables
 $ touch .env.dev
 ```
 
-We're gonna need to generate a SECRET_KEY for our environment variables. To do so, run following code on the command line.
+We're gonna need to generate a SECRET_KEY to paste into our .env.dev file. To do so, run following code on the command line.
 ```bash
 $ python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
