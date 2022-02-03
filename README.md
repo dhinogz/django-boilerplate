@@ -1,28 +1,43 @@
-# Books
+# Django Boilerplate
 
-Books specializes in managing a libraries website using Django. 
+Simple Django boilerplate from William Vincent's Django for Professionals. 
+
+Includes:
+- Docker
+- Allauth
+- Bootstrap 4
+- Crispy Forms
 
 ## Installation
 
-Use Docker to create project container
+Make sure you have Docker installed to create project container.
 
-First clone repo
+First, clone repo
 ```bash
-git clone "ssh"
+git clone https://github.com/dhinogz/django-boilerplate.git
 ```
 
+Then, run this command to install dependencies in container and run in Docker detach mode
+
+```bash
+docker-compose up -d --build
+```
+Run this command to shut down container
+```bash
+docker-compose down
+```
+
+Make migrations
+```bash
+docker-compose exec web python manage.py migrate
+```
 
 
 ## Usage
 
-Run this command to install dependencies in container and run in Docker detach mode
+In order to use the command line on docker, use this code snippet at the start of every command
 ```bash
-docker-compose up -d --build
-```
-
-Run this command to shut down container (useful for troubleshooting)
-```bash
-docker-compose down
+docker-compose exec web
 ```
 
 ## Contributing
