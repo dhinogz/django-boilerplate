@@ -60,14 +60,16 @@ $ docker-compose up -d --build
 Visit page at http://127.0.0.1:8000/
 Access admin site at http://127.0.0.1:8000/admin 
 
-After first install, make migrations
+After first install, make migrations and migrate
 ```bash
+$ docker-compose exec web python manage.py makemigrations accounts
 $ docker-compose exec web python manage.py migrate
 ```
 
-Run this command to shut down container
+Shut down container and build again
 ```bash
 $ docker-compose down
+$ docker-compose up -d --build
 ```
 
 ## Usage
