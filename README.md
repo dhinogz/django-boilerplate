@@ -10,7 +10,7 @@ Includes:
 
 ## Installation
 
-
+### Initial
 First, clone repo
 ```bash
 $ git clone https://github.com/dhinogz/django-boilerplate.git
@@ -20,7 +20,7 @@ Change name and enter directory
 ```bash
 $ mv django-boilerplate project_name && cd project_name
 ```
-
+### Environment variables
 We're gonna want to create a .env.dev file to store our environment variables
 ```bash
 $ touch .env.dev
@@ -42,6 +42,7 @@ SECRET_KEY= OUR GENERATED SECRET KEY
 DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
 ```
 
+### Docker
 Make sure you have Docker installed to create project container.
 
 Then, run this command to install dependencies in container and run in Docker detach mode. 
@@ -53,21 +54,21 @@ After first install, make migrations
 $ docker-compose exec web python manage.py migrate
 ```
 
-
-
 Run this command to shut down container
 ```bash
 $ docker-compose down
 ```
-
-
-
 
 ## Usage
 
 In order to use the command line on docker, use this code snippet at the start of every command
 ```bash
 $ docker-compose exec web
+```
+
+For example, let's suppose we want to start an app in our Docker instance. We would run the following code:
+```bash
+$ docker-compose exec web python manage.py startapp app_name
 ```
 
 ## Contributing
