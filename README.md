@@ -39,6 +39,7 @@ Example output:
 ```
 2x$e%!k_u_0*gq0s4!_u(2(^lpy&gir0hg)q&5nurj0-sseuav
 ```
+> Note: if your SECRET_KEY includes a dollar sign, $, then you need to add an additional dollar sign, $$. This is due to how docker-compose handles variable substitution. Otherwise you will see an error!
 
 Add following text to .env.dev file:
 ```
