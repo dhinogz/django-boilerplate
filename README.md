@@ -71,6 +71,7 @@ $ docker-compose down
 
 ## Usage
 
+### Running commands
 In order to use the command line on docker, use this code snippet at the start of every command
 ```bash
 $ docker-compose exec web
@@ -80,6 +81,13 @@ For example, let's suppose we want to start an app in our Docker instance. We wo
 ```bash
 $ docker-compose exec web python manage.py startapp app_name
 ```
+
+### Seeing logs
+To display log output from our container, run following code:
+```bash
+docker-compose logs
+```
+This is very useful for debugging.
 
 ### Static files in production
 Before deploying, we need to run collectstatic to create a single, production-ready directory of all the static files in our project.
