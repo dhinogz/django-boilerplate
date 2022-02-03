@@ -34,7 +34,7 @@ $ touch .env.dev
 
 We're gonna need to generate a SECRET_KEY to paste into our .env.dev file. To do so, run following code on the command line.
 ```bash
-$ python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+$ python -c "import secrets; print(secrets.token_urlsafe())"
 ```
 Example output:
 ```
