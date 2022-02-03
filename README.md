@@ -84,7 +84,7 @@ $ docker-compose exec web python manage.py startapp app_name
 
 ### Create super user
 ```bash
-$ docker-compose exec web python manage.py creatsuperuser
+$ docker-compose exec web python manage.py createsuperuser
 ```
 
 ### Seeing logs
