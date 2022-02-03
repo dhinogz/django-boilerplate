@@ -4,11 +4,12 @@ Simple Django boilerplate from William Vincent's Django for Professionals.
 
 Includes:
 - Docker 
-- Built in user management with allauth (also includes custom allauth templates)
-- Base template with simple navbar and home/about templates
+- Built in user management with allauth
 - Custom User Model set up
 - Finished tests for accounts and pages app
-- Page app includes Home and About views
+- Pages app includes Home and About views
+- Base template with simple navbar and home/about templates
+- Custom allauth templates
 - Responsive CSS styling with Bootstrap 4
 - Crispy Forms
 
