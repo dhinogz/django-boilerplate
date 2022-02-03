@@ -10,12 +10,12 @@ Includes:
 
 ## Installation
 
-Make sure you have Docker installed to create project container.
 
 First, clone repo
 ```bash
 git clone https://github.com/dhinogz/django-boilerplate.git
 ```
+Make sure you have Docker installed to create project container.
 
 Then, run this command to install dependencies in container and run in Docker detach mode
 
