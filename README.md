@@ -85,7 +85,7 @@ $ docker-compose exec web python manage.py startapp app_name
 ### Seeing logs
 To display log output from our container, run following code:
 ```bash
-docker-compose logs
+$ docker-compose logs
 ```
 This is very useful for debugging.
 
