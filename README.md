@@ -57,7 +57,8 @@ Then, type this into the command line to build and run container in detached mod
 ```bash
 $ docker-compose up -d --build
 ```
-Visit page on http://127.0.0.1:8000/
+Visit page at http://127.0.0.1:8000/
+Access admin site at http://127.0.0.1:8000/admin 
 
 After first install, make migrations
 ```bash
