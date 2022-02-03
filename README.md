@@ -7,7 +7,7 @@ Includes:
 - Built in user management with allauth
 - Custom User Model set up
 - Finished tests for accounts and pages app
-- Pages app includes Home and About views
+- Pages app includes Home and About
 - Base template with simple navbar and home/about templates
 - Custom allauth templates
 - Responsive CSS styling with Bootstrap 4
